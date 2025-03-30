@@ -2,7 +2,7 @@
     "strict": false,
     "debug": true,
     "sp": {
-        "entityId": "http://localhost:8080/realms/myrealm",
+        "entityId": "flask-app",
         "assertionConsumerService": {
             "url": "http://localhost:8000/acs",
             "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
