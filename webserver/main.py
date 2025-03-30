@@ -44,7 +44,7 @@ def logout():
 @app.route("/acs", methods=["POST"])
 def acs():
     req = {
-        "https": "on",
+        "https": "off",
         "http_host": "localhost:8000",
         "script_name": "/"
     }
@@ -58,7 +58,7 @@ def acs():
 @app.route("/sso", methods=["GET", "POST"])
 def sso():
     req_data = {
-        "https": "on",
+        "https": "off",
         "http_host": request.host,
         "script_name": request.path,
         "get_data": request.args.copy(),
