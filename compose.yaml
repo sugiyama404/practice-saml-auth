@@ -11,5 +11,7 @@ services:
   webserver:
     build: ./webserver
     container_name: webserver
+    volumes:
+      - ./webserver:/app
     ports:
       - "8000:8000"

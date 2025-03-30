@@ -1,0 +1,25 @@
+{
+    "strict": false,
+    "debug": true,
+    "sp": {
+        "entityId": "http://localhost:8080/realms/myrealm",
+        "assertionConsumerService": {
+            "url": "http://localhost:8000/acs",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+        "singleLogoutService": {
+            "url": "http://localhost:8000/logout",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        }
+    },
+    "idp": {
+        "entityId": "http://localhost:8080/realms/myrealm",
+        "singleSignOnService": {
+            "url": "http://localhost:8080/realms/myrealm/protocol/saml/sso"
+        },
+        "singleLogoutService": {
+            "url": "http://localhost:8080/realms/myrealm/protocol/saml/slo"
+        },
+        "x509cert": "MIICnTCCAYUCBgGV5aSGwjANBgkqhkiG9w0BAQsFADASMRAwDgYDVQQDDAdteXJlYWxtMB4XDTI1MDMzMDA2MDAxOVoXDTM1MDMzMDA2MDE1OVowEjEQMA4GA1UEAwwHbXlyZWFsbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKZoMaRg/PHJDcRIf4gQ70hNlBIN2BXSgrK2dCbaICwj3Im7KsTBskz87uLNPCbsNpZS9u1gc756z3rsvJLQh8PHHFbK7l7Mtspa9lhwcO/kx8bJpx/kltVQRlYCZ+VKA4ugW81GcC404KalWXHz0UzoXRZxrKju1co7E2TfvvH/lFGPIHdYcqx4V2EAxUz5liLvSWII+7equ9MSNqQ0IYH5iAaJIunBsyxM9/WT3YY9qmeQxx4Y5Af7JP+pi8VwRVz9IkQbq6Vpz0myjt0fEQ5RayBm5+rwwP6k7Csk5/IPWYGZldww9XhodJuyv5MpwH7rnR8b+A7RalwUC4CtLiUCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAGJZIAx2hvgN4vKlSo52ebkCAN8KCJlCotHAu5+zpverZ00ta265v4FYYdHfsnK6QMaNw5LYVNJXVC6TWrVUM+DBcVUku//d6baiO+QvmAyxK9EdtIXp9M6C6Ih8E7Xm5xonpI9QxmDCUROH2wbx35c3enwiLNqm/0AvB10BVVHj0SpVi+fOLQagHlYSX8p4e1p1VyzYhYYXyfFGiNlFknFr4bzLOM+s133XkOiZrjmmsC8dccWkqvvP1OA30Sxn4Qjf2qb64Ub4+Mo+7+vQpqoE9koP6Z6m+vltlAqcWtM4ftu1TgbdHn+/BjVw2ISlQSL6Qyy0Daoy+wuhzwGKSHA=="
+    }
+}
