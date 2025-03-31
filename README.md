@@ -1,7 +1,7 @@
 # KeycloakとFlaskによるSAML認証基盤構築
 
 <p align="center">
-  <img src="source/saml.gif" alt="animated" width="400">
+  <img src="source/saml.gif" alt="animated">
 </p>
 
 ![Git](https://img.shields.io/badge/GIT-E44C30?logo=git&logoColor=white)
